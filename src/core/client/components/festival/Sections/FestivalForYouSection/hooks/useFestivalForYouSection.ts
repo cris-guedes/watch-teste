@@ -3,7 +3,7 @@ export interface Category {
     name: string;
 }
 
-export interface Ad {
+export interface FestivalForYouAd {
     mediaUrl: string;
 }
 
@@ -11,7 +11,7 @@ export interface FestivalForYouSectionProps {
     cardWidth?: string;
     multiCardWidth?: string;
     categories?: Category[];
-    ad?: Ad;
+    ad?: FestivalForYouAd;
 }
 
 export function useFestivalForYouSection(props: FestivalForYouSectionProps) {

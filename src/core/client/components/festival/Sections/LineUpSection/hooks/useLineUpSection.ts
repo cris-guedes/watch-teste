@@ -1,21 +1,21 @@
 import { ReactNode } from "react";
 
-export interface Artist {
+export interface LineUpArtist {
     id: string;
     name: string;
     imageUrl: string;
     genre: string;
 }
 
-export interface Ad {
+export interface LineUpAd {
     mediaUrl: string;
 }
 
 export interface LineUpSectionProps {
     cardWidth?: string;
     multiCardWidth?: string;
-    lineup?: Artist[];
-    ad?: Ad;
+    lineup?: LineUpArtist[];
+    ad?: LineUpAd;
 }
 
 export function useLineUpSection(props: LineUpSectionProps) {

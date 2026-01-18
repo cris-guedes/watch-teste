@@ -1,11 +1,11 @@
-export interface Ad {
+export interface PromoBannerAd {
     id: string;
     title: string;
     mediaUrl: string;
 }
 
 export interface PromoBannerProps {
-    ad?: Ad;
+    ad?: PromoBannerAd;
     alt?: string;
 }
 

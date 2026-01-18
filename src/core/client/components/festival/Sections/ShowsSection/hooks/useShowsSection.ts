@@ -5,7 +5,7 @@ export interface ShowsSectionShow {
     thumbnailUrl: string;
 }
 
-export interface Artist {
+export interface ShowsSectionArtist {
     id: string;
     name: string;
     imageUrl: string;
@@ -16,7 +16,7 @@ export interface ShowsSectionProps {
     title: string;
     href?: string;
     shows?: ShowsSectionShow[];
-    artists?: Artist[];
+    artists?: ShowsSectionArtist[];
     itemClassName?: string;
     variant?: 'default' | 'portrait';
     ad?: {

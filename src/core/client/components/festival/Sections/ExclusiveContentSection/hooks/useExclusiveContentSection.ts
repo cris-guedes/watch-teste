@@ -5,7 +5,7 @@ export interface ExclusiveContent {
     thumbnailUrl: string;
 }
 
-export interface Ad {
+export interface ExclusiveContentAd {
     mediaUrl: string;
 }
 
@@ -13,7 +13,7 @@ export interface ExclusiveContentSectionProps {
     cardWidth?: string;
     multiCardWidth?: string;
     content?: ExclusiveContent[];
-    ad?: Ad;
+    ad?: ExclusiveContentAd;
 }
 
 export function useExclusiveContentSection(props: ExclusiveContentSectionProps) {
