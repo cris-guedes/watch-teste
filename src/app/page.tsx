@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Footer } from "@/core/client/components/festival/Footer";
-import { Hero } from "@/core/client/components/festival/Hero";
+import { Hero } from "@/core/client/components/festival/Header/Hero";
 import { useAppContext } from "@/core/client/hooks/app/useAppContext";
 import {
   LineUpSection,

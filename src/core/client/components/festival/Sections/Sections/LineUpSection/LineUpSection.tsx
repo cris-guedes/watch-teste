@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import { Section } from "../../Section";
+import { Section } from "../../SectionContainer";
 import { ContentCarousel } from "../../Carousel";
-import { ArtistCard, CarouselAdCard } from "../../Cards";
+import { ArtistCard, CarouselAdCard } from "../../Carousel/ContentCarousel/Cards";
 import { LineUpSectionProps, useLineUpSection } from "./hooks/useLineUpSection";
 
 export function LineUpSection(props: LineUpSectionProps) {

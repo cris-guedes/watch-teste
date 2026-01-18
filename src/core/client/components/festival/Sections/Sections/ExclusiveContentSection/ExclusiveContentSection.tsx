@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { Section } from "../../Section";
+import { Section } from "../../SectionContainer";
 import { ContentCarousel } from "../../Carousel";
-import { CarouselAdCard } from "../../Cards";
+import { CarouselAdCard } from "../../Carousel/ContentCarousel/Cards";
 import { ExclusiveContentSectionProps, useExclusiveContentSection } from "./hooks/useExclusiveContentSection";
 
 export function ExclusiveContentSection(props: ExclusiveContentSectionProps) {

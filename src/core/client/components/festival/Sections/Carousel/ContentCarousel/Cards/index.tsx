@@ -1,4 +1,4 @@
 export * from "./ArtistCard";
 export * from "./ShowCard";
 export * from "./GenreCard";
-export * from "./CarouselAdCard";
+export * from "../../CarouselAd/CarouselAdCard";

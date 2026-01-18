@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import { Section } from "../../Section";
+import { Section } from "../../SectionContainer";
 import { ContentCarousel } from "../../Carousel";
-import { ShowCard, ArtistCard, CarouselAdCard } from "../../Cards";
+import { ShowCard, ArtistCard, CarouselAdCard } from "../../Carousel/ContentCarousel/Cards";
 import { ShowsSectionProps, useShowsSection } from "./hooks/useShowsSection";
 
 export function ShowsSection(props: ShowsSectionProps) {

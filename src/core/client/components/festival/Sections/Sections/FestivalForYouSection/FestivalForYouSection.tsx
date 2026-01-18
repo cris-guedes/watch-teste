@@ -3,7 +3,7 @@
 import React from "react";
 import { Button } from "@/core/client/components/ui/Button";
 import { ContentCarousel } from "../../Carousel";
-import { GenreCard, CarouselAdCard } from "../../Cards";
+import { GenreCard, CarouselAdCard } from "../../Carousel/ContentCarousel/Cards";
 import { FestivalForYouSectionProps, useFestivalForYouSection } from "./hooks/useFestivalForYouSection";
 
 export function FestivalForYouSection(props: FestivalForYouSectionProps) {

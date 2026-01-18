@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import { Section } from "../../Section";
+import { Section } from "../../SectionContainer";
 import { ContentCarousel } from "../../Carousel";
-import { ShowCard } from "../../Cards";
+import { ShowCard } from "../../Carousel/ContentCarousel/Cards";
 import { InLiveSectionProps, useInLiveSection } from "./hooks/useInLiveSection";
 
 export function InLiveSection(props: InLiveSectionProps) {
