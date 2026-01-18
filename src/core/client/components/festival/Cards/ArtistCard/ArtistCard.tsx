@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Card } from "@/core/client/components/ui/Card";
 import { ArtistCardProps, useArtistCard } from "./hooks/useArtistCard";
@@ -14,10 +14,12 @@ export function ArtistCard(props: ArtistCardProps) {
             models.className
         )}>
             {/* Image */}
-            <img
+            <Image
                 src={models.image}
                 alt={models.name}
-                className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-110"
+                sizes="(max-width: 640px) 45vw, (max-width: 768px) 30vw, (max-width: 1024px) 20vw, 15vw"
             />
 
             {/* Overlay */}

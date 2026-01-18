@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import Image from "next/image";
 import { Button } from "@/core/client/components/ui/Button";
 import { Maximize, Settings, LayoutGrid, Volume2 } from "lucide-react";
 import { HeroProps, useHero } from "./hooks/useHero";
@@ -11,10 +11,15 @@ export function Hero(props: HeroProps) {
     return (
         <section className="relative h-[85vh] w-full overflow-hidden">
             {/* Background Image */}
-            <div
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-1000"
-                style={{ backgroundImage: `url(${models.backgroundImage})` }}
-            >
+            <div className="absolute inset-0 transition-transform duration-1000">
+                <Image
+                    src={models.backgroundImage}
+                    alt={models.title}
+                    fill
+                    priority
+                    className="object-cover"
+                    sizes="100vw"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent opacity-80" />
                 <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-transparent" />

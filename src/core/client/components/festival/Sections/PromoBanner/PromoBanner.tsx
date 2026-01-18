@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import Image from "next/image";
 import { CarouselAd } from "../../Carousel";
 import { PromoBannerProps, usePromoBanner } from "./hooks/usePromoBanner";
 
@@ -11,10 +11,12 @@ export function PromoBanner(props: PromoBannerProps) {
 
     const items = Array.from({ length: models.repeatCount }).map((_, i) => (
         <div key={i} className="w-full relative group cursor-pointer overflow-hidden aspect-[12/3]">
-            <img
+            <Image
                 src={models.ad!.mediaUrl}
-                className="w-full h-full object-contain"
-                alt={models.alt}
+                fill
+                className="object-contain"
+                alt={models.alt || "Advertisement"}
+                sizes="100vw"
             />
         </div>
     ));

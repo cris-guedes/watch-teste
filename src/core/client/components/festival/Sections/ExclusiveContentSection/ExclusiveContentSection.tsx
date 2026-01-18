@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import Image from "next/image";
 import { Section } from "../../Section";
 import { ContentCarousel } from "../../Carousel";
 import { CarouselAdCard } from "../../Cards";
@@ -12,7 +12,13 @@ export function ExclusiveContentSection(props: ExclusiveContentSectionProps) {
     const items = [
         ...(models.content.map(content => (
             <div key={content.id} className="relative aspect-video rounded-xl overflow-hidden group cursor-pointer">
-                <img src={content.thumbnailUrl} className="w-full h-full object-cover transition-transform group-hover:scale-110" alt={content.title} />
+                <Image
+                    src={content.thumbnailUrl}
+                    fill
+                    className="object-cover transition-transform group-hover:scale-110"
+                    alt={content.title}
+                    sizes="(max-width: 640px) 85vw, (max-width: 768px) 60vw, (max-width: 1024px) 38vw, 34vw"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
                 <div className="absolute inset-0 p-6 flex flex-col justify-end">
                     <div className="flex justify-between items-end">

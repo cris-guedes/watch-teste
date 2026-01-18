@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Card } from "@/core/client/components/ui/Card";
 import { ShowCardProps, useShowCard } from "./hooks/useShowCard";
@@ -15,10 +15,12 @@ export function ShowCard(props: ShowCardProps) {
         )}>
             {/* Image Container */}
             <div className="relative aspect-video overflow-hidden">
-                <img
+                <Image
                     src={models.image}
                     alt={models.title}
-                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    sizes="(max-width: 640px) 75vw, (max-width: 768px) 50vw, (max-width: 1024px) 30vw, 30vw"
                 />
 
                 {/* Glassy border effect on image only */}

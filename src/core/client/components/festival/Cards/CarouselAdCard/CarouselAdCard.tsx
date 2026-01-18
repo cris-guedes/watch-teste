@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { CarouselAdCardProps } from "./hooks/useCarouselAdCard";
 
@@ -11,10 +11,12 @@ export function CarouselAdCard({ imageUrl, span = 1, aspectRatio = "aspect-video
             aspectRatio,
             className
         )}>
-            <img
+            <Image
                 src={imageUrl}
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                fill
+                className="object-cover group-hover:scale-110 transition-transform duration-700"
                 alt="Advertisement"
+                sizes="(max-width: 640px) 92vw, (max-width: 768px) 72vw, (max-width: 1024px) 62vw, 60vw"
             />
 
             {/* Announcement Badge */}
